@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Búskame — Encuentra tu especialista de salud en Chile</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     --verde: #1a8c75;
@@ -15,7 +15,7 @@
     --texto: #1a2e29;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'DM Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
 
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -27,12 +27,12 @@
   .logo { display: flex; align-items: center; gap: 10px; }
   .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
   .logo-icon svg { width: 20px; height: 20px; fill: white; }
-  .logo-text { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
   .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
   .nav-links a:hover { color: var(--verde); }
-  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
   .btn-nav:hover { background: var(--verde-oscuro); }
 
   .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
@@ -62,7 +62,7 @@
   .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
-  .hero-content h1 { font-family: 'Fraunces', serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
   .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
 
   .search-box {
@@ -70,10 +70,10 @@
     display: flex; gap: 6px; margin-bottom: 1.5rem;
     box-shadow: 0 8px 32px rgba(0,0,0,0.15);
   }
-  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'DM Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
   .search-box input::placeholder { color: #aaa; }
   .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
-  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'DM Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
   .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
   .search-btn:hover { background: #073d33; }
 
@@ -89,12 +89,12 @@
 
   .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
   .stat { text-align: center; }
-  .stat-n { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
   .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
   .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
 
   .beneficios { padding: 4rem 4rem; background: var(--blanco); }
-  .section-title { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
   .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
   .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
   .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
@@ -116,11 +116,11 @@
     width: 64px; height: 64px; border-radius: 14px;
     background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 700; color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
   }
   .prof-header { display: flex; gap: 1rem; align-items: center; }
   .prof-info { flex: 1; }
-  .prof-name { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
   .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
   .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
   .badge {
@@ -136,16 +136,16 @@
   .btn-contactar {
     background: var(--verde); color: white; border: none; border-radius: 8px;
     padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
-    font-family: 'DM Sans', sans-serif; transition: background 0.2s;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
     text-decoration: none; display: inline-block;
   }
   .btn-contactar:hover { background: var(--verde-oscuro); }
   .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
 
   .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-  .cta-prof h2 { font-family: 'Fraunces', serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
   .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
-  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
   .btn-cta:hover { transform: scale(1.03); }
 
   footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
@@ -399,7 +399,7 @@
     <!-- Tarjeta para próximos profesionales -->
     <div class="prof-card" style="border: 2px dashed #d1fae5; background: #f0fdf9; align-items: center; justify-content: center; text-align: center; min-height: 240px;">
       <div style="font-size: 2rem; margin-bottom: 0.75rem;">➕</div>
-      <div style="font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--verde-oscuro); margin-bottom: 0.5rem;">¿Eres profesional de salud?</div>
+      <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--verde-oscuro); margin-bottom: 0.5rem;">¿Eres profesional de salud?</div>
       <p style="font-size: 13px; color: var(--gris); margin-bottom: 1rem; line-height: 1.5;">Publica tu perfil gratis y conecta con pacientes que te están buscando.</p>
       <button class="btn-contactar" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSciCDoGAla3bjWkDzuQ2D-5Cfp-R6JztEDUEKQu38B_OScfoQ/viewform','_blank')">Registrarme gratis</button>
     </div>
