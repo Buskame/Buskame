@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Jonas Lemus López · Psicólogo | Búskame</title>
+  <meta name="description" content="Ficha profesional de Felipe Jonas Lemus López, Psicólogo. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/felipe-jonas-lemus-lopez.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="felipe jonas lemus lópez" data-especialidad="psicólogo" data-region="metropolitana providencia">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCADIAMgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDXAp6ikFPWvnj0B6ipFFNUVIopiHqKlUUxakWmhD1FSKKatSLVoljlFSKKaoqRRVIQ4ClAoFPAqkSAFGKeBS4q0SMI4qFzVhhxVeWtIIlsrSNUDc1I/JpmK6EjNsbikxTzTaqwrhikIp1FOwrjcUoFAFOAosAoFFOAoosO5iipFpgqRa8M9AkWpFqNalWmA8VItMHWpFqkSSLUi1GtSLVoTJFqRajWpFqkSSCnqKYtNu7mKys57q4YJDChkdj2AGTVolj7m4gs7d57uaOGFBlnkYKo/E1w+p/Fbw7ZzmKCSe72nBeJPl/AnrXiXjrxtf8AifUnaaR47MH91bg4VF7Z9T6mub8i4vZEggDMzDp0ArqjQ0vIm93ZHsPiP4wTi726HAkkIx88oPX0x/8AXqpH8Y9RwPtWm2h90dl/qa4CTwjqi2yyEKYwNxGfasOaGX7UYd4Vgc4+laQUH8LCUJR+JHvtl8U9FnthJOksEuADETkliccHpjvk13NvcQ3UCTW0qSxOMq6MCDXySZTuKuo3L0YcZr1n4TeMHLwaPdmI7nCRHaQxz79DjAq+Wxk0ewGkpNwPek3D1pkD+1FN3ClBpiFFPApgqRaAHgUUq0UhmGKetMFPWvBPSJUqVaiWpVqhDxUi0wU8VSJZItSCoxTxVoTJRUi1CDUgNWiWSqa87+NWvzaTpEFpHbpLFepIrsScqQABgfiTXoSmuE+MuiSar4Tku7dwstgGmIb+JP4vx4zWsLcyuQz5zgtpZ5iRGWHXA64rsvA2k3d2GutPkiWWAZIkTcrf7J9Onaq3gm1klnuGhjVxHHvLMcKOwya6/wAKeItL8OWDxWtheahLI5eWaOP5Wb/Z9h2rarOUrxidNCnGNpyZ2trBHNYxvPD5Urr80Z528dK8r8c+D5be7e80xHk3khoz1HuK9N0HxHba883+hz2kkIDhZVxuFch4o1LVtQ1O4g0iSJIY2xubGPxJrmpc0JnbW5KlPueePo8pskaXInC8jGMe1YllfS2N2rws0c0bZVhwQfWuuvxqFhIJJ7+1vDn54kYH8j61z2oW0Q1ZHgKtDKQwxztOeQa7aUm9HqeZWiktND33wDqVxfeF7S5vGdriXcXZ/wCLnqPbFdEs2e9Y0MqpCgjCqoUYCjAFSpP71HtUYchsLLUiyVmRze9TpJmtI1EyXE0VapUNUonzVqM1pcixbSimx0UAYYqRaiFSLXgnpEq1KtRLUgNUgJRUi1EtPBqkSyUGng1EDTwa0RDJAaeDUQNOBq0iWTKag1UQyaVeJcgNA0DhwecrtOakB71T1sPJo17HEqs7QsqqxwCcdK0SJZ4D4Dha+jl02KZYor7PnysPuRoAcDB5JzXX31nq8dnJZ6LJstYMBWyiBh7KBn9TVX4f2CQzaglvbXAhtr3escqYlaJk2sMeuOffFdZPdafaJIYpz948LG5LfhiqqSvLRHfQp3gm3uc3FF4ktrezgjvIlN3I0f8ApEQk2KELbs8Ht0965CwtGmvLy21DM14sxyeiEEcEL+deq6ZqFtdSJd38ckccJMcKFfnYt95yOwAGPxNeca9qNqnieWSwfbdxShNjD5ZE6nJ9qiMtbI0qU1a8mA8MJbqJYpHTHX5yQfwrm/E+nrDC9wmQRIgOOhyP/wBVekarFqEthHOkdkIXG7cjMxH4YFclqlqLjTJoZX5Zgxc8Y5HNXTqNO7ZlWorlskdZ4Smmfw/Z/aWZpQmCW6+1baSGs+zjEFtFGuMKoHFWVaspO7bONKyL8Uhq3FJWbG1Wom6UKTQNGxbtkVejNZVs/StCN666c7oxkrF6M0VFG1FbIzMgGpFNQg09TXhHok6mpFNQA81IpqkImU1IpqAGnqatEsnBpwNRKacDWiJZKDTgaiBpd1aJEMl3Uu7jmod1JuraMbmbZg3oS08TO6sN1zCrFfTaSv8AUVf1W8jt9FubiYkpFGXbHUgCqPi20uLiwFzp4BvrY+Ygxy6/xJn3H6isOx11dRt2jlAEUg8so4xg9wRWNam4y5uh6mDrp0+Tqjjbdb3xpOftUz21pH/qreEcn0PPFZ/iPwvZ2QDrFcKwAVf3gLfiK9d8m3g0lwESMKvBUYIryHT53ttWuU1Gd5VPyje+cn1qo1JO7XQqUKcUlJXb6l/w39vs9MnNzO0mmlMxlz8wbPTFUnnjuXjt+WM8gTHQ4zz+lN1zWo4ITFCwKPwEFSeDrBpLtr+5yHjBWNT796aW85GFWoorkidlGqxoqLnaowMnPFTIagBqRDWZzXLaGrCNVSM1OhpMDRt3rQikrIgNaER4rekZTNOJ6KrxN0orqRiykDTw1QhqUNXiHolhWqVTVUNT1eqQmWg1PU1WVqkVqtIllgGng1ApqQGtUiGSg0ZpgNUr/VrGwB+13UUbD+HOW/Ic1tCLexm2XyaQmuRvvHWnxIxtYppmH94bF9K5abx3qs8zpG0MAzkbY84H1Oa64UZdjFyR6Vq2oR6bYS3U3ITgLnG4noK85tkPiHSrmeXEV28siu8fBUhjj9MVTn1K+vRdPql07WcKgr5rDaDjJY9vaqXhfVEh1C5ayk8+0kw8hXJ8tuhJ4+6eOaeIoS9n7u5thKsY1Pe2Zm65P4msYFtpppLqHkK0YJyPeuauE1WcgvbOrDqW4zXtsX2bUQQAFf1U5BrLv/D6HJA+tcMcQ46OJ6EsMpaqTseV6Zp7xyebcndJ2HYVr2mpXcGuQCCdxZRr++jH3WJz+uKbrN1ax3X2aGZQTwDnAJz0z0qiiNC2QrI/QAjB/GuynTlP3po4a04wXJA9OjkVlDKcg8gip0auG0rX54UW3MKyrHgbskE55res9etpCBKrxN3z8wH5Vzyw81siVUTOkjNWEPFZ9rcxTrmKRWHfB6VcRs1g01uWi9AavxHiqFv2q/HXRSRlNlqKiiIUV1IxZmb6UPVctWVqerm01Gws4kDyXEgDZP3U6Z+v+FeIlc9Fuxvh6er1UV6kV6pIkuo1So1U1cVOj5q4olltTTbq6is7Z5522xoMk/0HvVHUNSg063824Y8nCqOrH0FcFrOrzX95uuXCxBSI0B+UZzn3zgV20MO6jv0MalRRLmteK726O2FhaWz/ACgIfmPPc/n0rlphJubefm3FScZJ5x1/L6069R00tJs8qVcsAR/k4zTso9wvljfI+M5OMk9s9uAPx7V6sKcYaJHI5NkVmCkpidv3bgLkngep564wDj6VHqNu9q0dzGiMhyGXdnI/w98dc1bCFGVlDbCSRkY5P0+hrTibzLbL5YcgquDgcnkd/etOW+hN7HIalC+thQ87xqo3bQPl4OBlR+WaseH5L7w7dXtpasUjvYTEcru82POcDjqCMjHOM9xWjdaVJbssmnlihUt5eeCPUEfUcUhmt72Ew3TCCZeEck5UjHQ/Xn06j60oR3e4uZlvQZp9PvxNLIotZH4AbO0Hp+FdZ411DyfCt7JFIqO0e1SxxknjH161xMjm2tHEyILV8GbYPunjJHTg/KQB0Jrnb7Ub3XpIoXnZbW3ACDA54+8fevPrYRe1Uo7HfRxb9k4y3MKG3lu3EEIBPdiflUepNbNla6hbQrG0qNAjBdsg3Y5569P8K1NLshbJhGCI68sOGbPA/wAcjNXogrSjacttPBHqOuBwRnv7mu6FPTU4pT7GaImWTe0KnPJCHIyOMcc88VdhDsqs3y52gjvzxn654xVyCMgBgqIpzh+/oMdOh6emDTowqOo+bBJOAAQ/XOPX/H2qlBIjmuQsZI5NwaRGyTlDgjHXjt2x9a0bPX5oW23KFwvDdmXsfyqgiMoB+XaPvNg4GBzjP4fj2rK1S4WO4+xwcuOWI/iPbNZ1aUJL3kXCbT0PUNMvorqISQOHXp9D6GtaKYV5houpDTbqGL+BlHmj0J7/AIZru4bgEAg5rzJw9jK3Q6YvnVzoIZBRWdBP05oq1NWJcTHi1Avqt/bttWG1jRix9Tkn9K57w+TrHiK71R/9VD8kQ9Mjj8hk/jXP6hrcj3GoLEAi3rBnJ+9tBPFSaF4nOmWphEEbIWLs5bBJPb8BxXmRg0tDp5lJ6npQNSo1efHxZc3sgS0MFrGTjzZTx/L+ldNo5lC+dcal9r3DgIAEH+NLla3Kub+8KOTSXN/FZW7SynP91R1Y+grMudRt4oiWlU9cBTknHWubvrxrmbzHPy4wFPRen+fwrqw2HdWV3sZ1KiivMTUr+fULiWaVsvG2VUA4QdNv4/zqAkGa3YxMd+VO7v6d8k9+fSobxzDOtxHI7bwFYjkqM54Oeo9fekWTJQjBjIDEBfu8nHXnnvXtwioqyOGTvqJZRibTTGVViu5DxycHGcHk8j8M1VjaSF1EqA+WMBeMdcjJ+oPrVvSZGGsXVuWG7cJVyuAARzj05549KNRtjw5YsUbbvx6Hn8CDk/SrtpcnqXjHHJC6ZVlK4ZmGeOGx19+uOAKjgKwSu3LKPmJycsR6e2Dj6etFswOBKu5DxxhsBfUjnBBAGKssHYhmBj5VWUjgnOOeOCC2B9aoQ95FjjxIqOBtDM2cHaQR7A89uOOvSodSs7YAzJGrAIPl5BYjgtz1zwfeotSj/wBGlEkb7eckqARt67u4yMAGpbW+86FMt5ZEaho2woYjIPsCuf1/J76CMm5LW15arYMjTQyjG9NwOOASCcH7x/8ArU/7NHiTMSkEhfulcknOccbTnj26ehqe7QtO8aLu58tpNvG7nYD6j5fyFXrRZJnKF3woU7mySu/OC+evIJ+vNJR1uDfQxjDHLIwQAyFsgDI2t6kD0Ix+NXxBHzuwoUAY7HcQD6YwfyzSQROrvuh2+YWLs53DLZCgnv3PTNTKsjSOF8wk7cBjkjPUd9xBwSPp7VSQiDy0LMJAGkcAkL6gAZODzj+fanRxnPzg5VS54OGO3pj0xz79fangTIzFUyVcI5zksBwPzJzj9aheTyYwEYMWXjdu27gewxkcfgOnpRYCTEYfhQZAuFyvGBk88cj8+a5TSCk95c3khGzfgBueM/r271vak7xWNwkJVxg/NnnaPmO4Hoc8celctZyD7Hp8JzjzWmYgjOFGcfn/ADqJP3kXHZl67u5Zb2Ty2AAOCxzlu3f8ua6/w1qDS2/kSMDJFxx6VyVtA6Rmec7JZGLNzhjnPHvjkVZ0q5aC8V++eVB6CuTEUueOu5rTlZnpME9FZ9tMskayRnKMMg0V5Cm0dnLc8t1GXysyvlTs2gY6Hv8A596g0ySN5VaSJ5iD8q4+UD1ouAAdsuSEx9768ipBdSXErR20eyPPJx2/kKqKfLYyV1IvQQmQ7ZmZVP3dpx+OPrVlIzLPHDbrlOrYOAoPrUthZ3GoSLHFKMLwSB8qj6/0FdN/Y5sLYvbjzFxucgfMSB/+rHpSpqMpqM3Y7pKSpuUVcoWdpFaRbICS+csx78fp7U2QlJNxjyrk9f4QB9cnHB5o3pjf5nKgFgCB2zg8+oxio3ljMqglWyvzOxJG3j8+uDXuwgoqyPIlJyd2TX8xRo3JaONDtfaeQOCDgccfj1qnNwd9uu1HJJXIAJKjgn+v4UXNz/oxTdlyBk4Gd3QnPTFZlteJAH/e7QB8y4HH0q7pMnct292i+JbaSJxveB1OOg6EDPf6muju1EuGQtujBwxGSARjIP5fjn8fNra+mk177VISzZZcjuTXe6Q7yJtO45B6Ebhn0J/Cim+a4TVhbVjHMuFXOOWznZ2z24z06e1aSsiyEFkCkneD/eIxyCPofTB711OreApLbwVFrqzSBn2yiIYKhcZG30HUn8Pw5CIOUUDlgrDIGWXOCuVzzyTyenFWiLkJm8maNXh5PC8dDgccHoMZ9arIpWRQwLRu483ktnn5vp269c1YnhMqSbGCZAXLIRju3PJYE8AVXYrtSYFRucZcnA2kHIbtgHj/AIFQBbSC4vWuLloJPIhY+ZK+5gjHo0j9hnPJ9OtSwL5NsFZMknJb5dwBH0xjPB69ajtbzUbO0uIoLmWKzvFBmtRnY+0ZG4ntnPT8at27qYlXLbA7bABuLdNpU9AQ3bnp9DVK/UliBzLLFK8CrFu3dBgqDyeDwM+nYcYpsMkqyqEjDSEgEEhsccn1xgE9+vNSQhlMckgL52LvwNxBBBLcHOOp788Zpxtt4CIz+W4O7EXyMTjLKDznbjj+WRV2JuUbrA8pByRhlJAw3AxyO56YI6DNZ13dM85KEyMzcAsct8x28fUn375q9PlIHTdk79qiTozDGD19OuP6ViX0qW8jNG0oO8ncwAz1wMg8EcnIPSom7FxVyG+nJgvssoC5ZcAfNkHp+fUc1zegy5ljbaJSsW3bg5O5jwfXgZq1c3LeXOpkUmUFcD09aZ4NBLsSWG35flOD0x257mudPmmkjVrlizoYLVsDb8zOuxnUbscZBC9vTGarWyoTdTRgiONQASw65Gfw46VZvpIltSI2xhsFlX5WPfBz74xVe/AtNNhiw6mT5gCMcZrWqrEQZ1uizCTT4SOwxRWT4WucxvCcZHzD+tFfPVo8s2j0oO8UcwwgMvzQKG9MVZsNLn1aQJEfJtUPzsP5D3rOghmkJIO4KOuc4r0XRbdbXS4I1GDtBJ9SeaipJw2OuhTjUeuxDFaLY2yxW/7tVHAFEWrz2jgSMXQHr3qa/lADA54HasKWUP0Oea54rm3O6UlHRGtqVtHcx/a9NA3Hlox7jGV/wrl57jYAqkgjB+Y4ORkA1fs71rRmQNheorO8QJLdQ+fa2zSSk9QcZ98d69TD4uUFyVNu55eJwkZe/D7inc6mwC5KLsGAfT8/rVF4TqE6rtCIeshxgCiDSJ54xJdN5TE/cPatK102KIjfOTj0qquMW0WYQwz3aJks1sbQCDy2CkYHXnPJNdBp+0MmCQrfLgHtWZNFALXEeSwIPNPspvIBLkAds8GurL5c1Nt9znxceWaS7H2ZLpKal4bt7ObElu0KhPlA5xwevb1FfMOv6fPo2q3NpKHV1IAJBwy5+Vs9cZzz1xX0t4D8U6TruiWi2V7C8yRIGiMuXVtoGCDz1GPevN/j1pSwzW18gC7QYWYKAwDcgAnggEH8/auqDtJxZyHkIYkqisohxyEyMHcAox26fQ1SuEPM0O5XwVYbc49cY4K54+mc+9jyxKABI6IMMoIBCnHAXHQEmpYo1EaKSCNrEg4DIpHbJ9fXt09K2tcL2ElbEDqf3kzEA/Mc4HP5LnoRz+tSzxxgRsvyxBcK2RjHUdRgHnHvUkunXNnZW2oXNs62UzfuX3ZLsvDHHB5wc/1qvdHddi0dkdI1AlZkJ8wgggMfXk9OPzp6MWpJbr8wKPK0yN8xCkN05x2wM8fQ/i6N2ij3vIPL58xgMCTA5GTwSeBg80gmjjcBF3KhcALgOQV/hzjPOfw4HSs28u0llYNvVSiq5D8soPoe59eO5+rbSDVlbXdSW3ljtkDbhzuVuMDGFx2I56evtXOXEjFt4fjnkcH0H+GavazHvihlY7JcEYyBnHGRx9Kxi4fbhiMPnbjO3/638646knzWZ0QirFaYlc7idw9an8MLNKksUZCLK2ZC3AwD0BxwT/Sq0wDJ8hzj2zWh4QlwzoEUuhySf8DxSoq80h1HaJ0rW6vOkD4ECDcQBuwDyVPuM5/GqN4v2i6aVwvlxx7Vwv3jjqfTP9K2E3tC8jqe/wAoYqDjpz0zkj1qlPbn5kWIF0z8pGTz7+nB/OuuqtDnpvUqaNcrb3kRJGN3PGODxRVe6VrYmR1kWNQdxKnp7iivJqUoVXe53RlKCtY6uW2iSJ9sSg4PQV0PhHS7zX7iKz06AyzHt0Cj1J7AVWlt1ZCMDBFe3fs8aTHa+F7m+ZR9omnMRPoq4/qa8HDRdR8p7dap7KDkilB8FrJ7T/ibX0zSkcrbgAD8TnP6V4r8SfBE3gzW1SOWS4sJgWjkZcEex7ZFfZjIG61keIPDWkeIbNrPWbGK6gPOHyCD6gjkH6V3KhKErx2PPWKb+M+EZ3Ms7NENwXgelKsN/O3+swPSvd/iP8IbXw9CL/w79olswcSwSHe0eehU4yR9ea4q106GJQSMmuWtXcJWsdkIxnHmucfaaJLLjzZKkvbOz0+PLs0sn91T/M10GoajaW8jQRsrzhdxRew9zXNyuZpS7gZ7D0opSqVNXojOpyrSJkSwX1+ww32W3ByAO/4dT+NaaIUkBJ3JvBJxnafXHpxUx5AqODK3RYc5xweQfY+xr2cBN8/L0PNxUVy8x7l8EvCWka7oeoXmpWzvKJlWGSN2R4vlydpXn+ldX4v+H+r3ekSW1prQvrRCGSLUQRIpBGAJR+PUdzXXfD6Wxl8K6bNp1ibCKWJWMCrjk9ee/PeuguSHikRumCGAPtXfKpJT0OFJWufGN9aNbXksUsUkcwZlKnkAgkcZ75H+FQeeY1P2gK0W0BirEDB6jHXqP89K7b4k6elh4svRHg+a3mKVyoAzz16cH8evFclJlXU7XZ8KDkdVznB9ujcV02vqiblO6kuDAPMDKB95HyQrYJP+7xyfXv0ok3BpJChydo8xQ3JIwD9MdT0/SnNGz7txxhhvxzkgAnIPTjnPNPkURu5kDrsJxyxxjpySeMYA9PWlYdyOS4R4hHCo2oSg9GAxgfU44IqtfRQtBHI4AyoJOMFBz94d+e/pxV0xsr73+QhRtQ44AIxxxkgnp/hWbealbWMK4z9zBUE5bOQVBHuBRJq3vDS7FW5gaLy1HAZR8xOQcj9D/k1karYxxeUzMg35Ozpj/PNJqGq3t2yhV2RqThQvJJAzn3PFZjPLI5Lncc5OR75rkqTT2OiEWtyC6h2JvRvyp3h2Vhrduu4L5ziNs9MnpUkgJg+YD8qygzJMJlODGdwPuOlZKTi7otpNWZ9B6J4as0RXvW89h0UfKoGMYPc/jWle20MMey3iSNAMAKMVm+F9UF/pNrcoeJYwx9j3H51cvZuDk4FebiKs6j99np4elCCvFHHa3bjLZGQevvRVzVZFbOQTRXPFtG8opvU9StPh1rF1j/QWjU95GC/zr1r4faDL4d8PCyuCnmGV5DsOQM4/wrowKZcXENrA81zKkUKDLO7BQB7mqw2HVGXNc4a2JlWXJYekiu7oD8y9RS53qw7jg1zEfirQ5NXsBBqFu8l6DHEEbJb0z6cjHNSR+Jrb+3RYmOVRMrCORhhXZRnA/DNb/WItWbJ+rT3S6XNW5ijvtMmt588qY3IOCPcHsehzXyZ43uL6x8SXFrdbElhlKSmNAokIP3iB/eGCcccmvdV8d/8AFwU0WS3eC3ug0CTOOHkA3KR7cFfyrxP4tMs3j3V4oWMsoZWB6biFAK1xVGqttDuo0ZU7p9dTy/Wb0adqbyKu84ZQucd+KzB4inDZMERH1NVL2WW9u5JpvvseR6e1NEHHSvQpUVGCUtzhnNt6HTaRqiaisieWY5YwCRnII9q0PDl5Dp/iuO6vbVbu0R4zLA5wrqOoP5/pVDw3YG2sGldcSTHd77e3+Nb/AIG0KfxN40i0y02796mXcwXEYwWI9eM1thVFVtDKvf2ep9mQOktnGIQse1BtUcbARgYxxt6VaQ+ZjeAWIzx/FxxiontYRAiopTy8BTGMFQBj+WOOelRrdeUyR3WEZj8rjgMeeMHocA8fXFdu+xwbbnmPxz0zdYxagqyNLFIFY44EZPPI7E4GDnp2rwqaN9jJDkTeUSEGchiSD26E5r6o+IVlBf8AhyeKcKFZflBOOQc+/p0618q6iyqCJSGbc4MmB64xxgdK66TvGxDWpHfWVxZ2tndyS27tOBN+6YsUQEDawHTBOfr9KiYXKS4kjAG7YUDgbQMnOM89Oh9DUMarDloWVW3IXGcbyO/OeOvT1qxkbnJUbASABGAFGc546HsR0HQ4pxv1GyC4Mt1b+VIpR3yyYXBBf7r8cd/wzWSmnxkJJKGdDgqpYAE5AJwfTHQ/nXQYDfvXTaZFLDd1AwCeowT/AJAqCdECqfKAYcMQgJZl5wfwI/QDpSnBPVjjK2hlfYl3F2jCnDFO2fmPP0z27VkNaSEb1j5bkAEcdDit+aQMNwCoEOzceMEdzzkdce1Zl5cyiNQjYAGPvc49/XrXPUSNoNmXPZlRi4kRApwccn9Kw9TO0LHGMJ1+ta8pZnyx+YjJrO1FP3SNjoefoa5mzVI7n4U6r/os9hI3MR8xB/snr+v867qVy43N+ArgvhZ4Ya8SXWHuWjWJ2hSNADvwBnd6DkV093fM939hVhHMx2hhzXnV7c2h6eH5lC7KerzYJ5ANFRat4ev7UbneOZG5BU4OPxoqFBdWVKbvsfV3jP4haZ4bDwLi81Af8sIm4Q/7bdvp1rwrxT431PxDcFtRl3RA5S3j+WNPw7n3PNFFcjlKq7SehMIqmrx3OYSZluEnjJjlQhkZONpByCPxrrfFfxJvrx9JnhWKO4tMTbFBy0qnkn/ZOP1NFFbcqk1cunNplPxd4ubVvGOkavDIssUEkU6QICDAAclGJ/i681yfxh1S9uvFDXTPHbzXI8zy4GB2xkDaCfXHWiitaUEpIurJqDsefwwZIrVsLJHu7eKYcSMcD1wMn+VFFdcn7rZwLc64W37s8Vp/Bl4IPi9Aspx8rgc9WMXFFFZYB/vQxf8ADZ9StqUaYJ3FVznAyePp/XrUZv4WQxzxuVKkuApPXnGfT60UV7igjxuZmTraXcuk3MOjyx6lBNGy/YmmCSrznMUjenHyt+B7V8t+MI5rbW5YxDPayhgGglzE6kj0PXGDyODRRTho+Uta6mdB84VXBUFecjGznr7f1FAuJFhDFcNtAUbiAwJxnPr174NFFU3ZlJXQst5N84kiLQs24YX7wXjt6EfjiqMt6SCjB9wYoXIPY5wc/wCeaKKJNjiiqZri4QMsTLGflJPIDHnGep6VUvgYFYOyKeu0kHkjOMDr70UVz1F7tzSD1sZbzEsc8/rilFu9wpyCqE9WFFFc5sb2m65c6Ppcun2TAQyv5jMw+bOAMfTipvCscmq+JbdFmZJPmcuTnhRk4HrRRWVSEbN2N6NSTlGN9DoPFOthVeKZljiQ4HOTRRRXHTpqSuzsrTcZWR//2Q==" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Felipe Jonas Lemus López</div>
+          <div class="prof-esp">Psicólogo</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Providencia, Metropolitana</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🧠 Duelo y crisis vitales</span></div>
+      <p class="prof-desc">Psicólogo clínico especializado en procesos de duelo, pérdidas, quiebres significativos y crisis vitales. Su trabajo se caracteriza por brindar contención y respeto por lo que cada persona esté viviendo.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56971612149?text=Hola%20Felipe%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:ps.felipelemus@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          <a href="https://instagram.com/ps.felipe.lemus" target="_blank" class="btn-contactar" style="text-align:center;background:#c13584">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
