@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivette Parra Bustamante · Nutricionista Especialista en Diabetes | Búskame</title>
+  <meta name="description" content="Ficha profesional de Ivette Parra Bustamante, Nutricionista Especialista en Diabetes. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/ivette-parra-bustamante.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="ivette parra bustamante" data-especialidad="nutricionista diabetes" data-region="metropolitana las condes">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Ivette Parra Bustamante</div>
+          <div class="prof-esp">Nutricionista Especialista en Diabetes</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Las Condes, RM</span><span class="badge badge-gris">💻 Atiende online</span><span class="badge badge-gris">🥗 Salud metabólica</span></div>
+      <p class="prof-desc">Nutricionista clínica, especialista en el enfoque integral de la diabetes y salud metabólica.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56968104809?text=Hola%20Ivette%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:Ivetteparra1988@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          <a href="https://instagram.com/Nut.ivette.parra" target="_blank" class="btn-contactar" style="text-align:center;background:#c13584">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
