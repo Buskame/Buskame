@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karol Estephany Zamorano Lara · Fonoaudióloga | Búskame</title>
+  <meta name="description" content="Ficha profesional de Karol Estephany Zamorano Lara, Fonoaudióloga. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/karol-estephany-zamorano-lara.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="karol estephany zamorano lara" data-especialidad="fonoaudióloga" data-region="valparaíso quillota">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Karol Estephany Zamorano Lara</div>
+          <div class="prof-esp">Fonoaudióloga</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Quillota, Valparaíso</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🧩 Infanto-juvenil</span></div>
+      <p class="prof-desc">Fonoaudióloga dedicada al área infanto-juvenil hace 5 años. Cuenta con especialización en Autismo, Selectividad alimentaria, diplomado en atención temprana y en neurodivergencia en general. Trabaja para que cada usuario aprenda a través del juego.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56963427345?text=Hola%20Karol%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:Karolzamoranolara@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
