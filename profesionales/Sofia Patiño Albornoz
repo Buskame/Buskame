@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofía Patiño Albornoz · Psicóloga | Búskame</title>
+  <meta name="description" content="Ficha profesional de Sofía Patiño Albornoz, Psicóloga. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/sofia-patino-albornoz.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="sofía patiño albornoz" data-especialidad="psicóloga" data-region="maule talca">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Sofía Patiño Albornoz</div>
+          <div class="prof-esp">Psicóloga</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Talca, Maule</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🌈 Mujeres y disidencias</span></div>
+      <p class="prof-desc">Psicoterapeuta especializada en terapia conductual-contextual, dedicada a ofrecer terapia a mujeres y disidencias para vivir una vida plena. Trabaja con personas desde los 18 años, abordando neurodivergencias, desregulación emocional, estrés, ansiedad, depresión e ideación suicida. Formación en Terapia Dialéctica Conductual, Terapia de Aceptación y Compromiso, Mindfulness y Primeros Auxilios Psicológicos.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56983242568?text=Hola%20Sof%C3%ADa%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:Ps.sofiapatino@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          <a href="https://instagram.com/ps.sofiap" target="_blank" class="btn-contactar" style="text-align:center;background:#c13584">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
