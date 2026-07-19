@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carmen Sánchez Muñoz · Terapeuta Ocupacional | Búskame</title>
+  <meta name="description" content="Ficha profesional de Carmen Sánchez Muñoz, Terapeuta Ocupacional. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/carmen-sanchez-munoz.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="carmen sánchez muñoz" data-especialidad="terapeuta ocupacional" data-region="metropolitana providencia">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Carmen Sánchez Muñoz</div>
+          <div class="prof-esp">Terapeuta Ocupacional</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Providencia / Domicilio RM sur oriente</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🧠 Neurorrehabilitación</span></div>
+      <p class="prof-desc">Terapeuta ocupacional con formación en salud mental y psiquiatría, neurorrehabilitación y neurociencias. Experiencia en rehabilitación física y cognitiva, salud mental e inclusión social. Trabaja con adultos mayores, adultos y población con condiciones de salud mental, física y funcional.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56935892839?text=Hola%20Carmen%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:miradasterapeuticas.salud@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          <a href="https://instagram.com/miradasterapeuticas" target="_blank" class="btn-contactar" style="text-align:center;background:#c13584">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
