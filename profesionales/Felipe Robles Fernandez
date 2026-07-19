@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Alberto Robles Fernández · Enfermero | Búskame</title>
+  <meta name="description" content="Ficha profesional de Felipe Alberto Robles Fernández, Enfermero. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/felipe-alberto-robles-fernandez.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="felipe alberto robles fernández" data-especialidad="enfermero" data-region="biobío los ángeles">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Felipe Alberto Robles Fernández</div>
+          <div class="prof-esp">Enfermero</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Los Ángeles, Biobío</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🩺 Cuidados paliativos</span></div>
+      <p class="prof-desc">Enfermero con experiencia en cuidados intensivos y cuidados paliativos en domicilio. Cuenta con capacitaciones y diplomados en urgencias y emergencias, curación avanzada y cuidados paliativos oncológicos.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56937597473?text=Hola%20Felipe%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:felipealbertoroblesfernandez@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
