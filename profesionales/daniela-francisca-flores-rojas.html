@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniela Francisca Flores Rojas · Kinesióloga | Búskame</title>
+  <meta name="description" content="Ficha profesional de Daniela Francisca Flores Rojas, Kinesióloga. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/daniela-francisca-flores-rojas.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="daniela francisca flores rojas" data-especialidad="kinesióloga" data-region="metropolitana san miguel">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:84px;height:84px;border-radius:16px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Daniela Francisca Flores Rojas</div>
+          <div class="prof-esp">Kinesióloga</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 San Miguel, RM</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🧩 Piso pélvico, embarazo y postparto</span></div>
+      <p class="prof-desc">Kinesióloga especializada en piso pélvico, embarazo, postparto y movimiento, con enfoque en la reconexión corporal y la educación en salud femenina. Integra conocimientos de kinesiología, yoga, educación corporal, neurociencia y Gestalt, buscando que las mujeres comprendan su cuerpo y participen activamente en sus procesos. Atiende bajo su marca Pelvis Mujer.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56962739466?text=Hola%20Daniela%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:contactopelvismujer@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          <a href="https://instagram.com/pelvismujer_" target="_blank" class="btn-contactar" style="text-align:center;background:#c13584">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
