@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamila Francisca Muñoz Leiva · Psicóloga | Búskame</title>
+  <meta name="description" content="Ficha profesional de Yamila Francisca Muñoz Leiva, Psicóloga. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/yamila-francisca-munoz-leiva.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="yamila francisca muñoz leiva" data-especialidad="psicóloga" data-region="ohiggins rancagua">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:84px;height:84px;border-radius:16px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Yamila Francisca Muñoz Leiva</div>
+          <div class="prof-esp">Psicóloga</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Rancagua, O'Higgins</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🧩 Psicología clínica</span></div>
+      <p class="prof-desc">Psicóloga con experiencia en intervención clínica con población infanto-juvenil y adulta, especialmente en contextos de vulnerabilidad psicosocial, consumo problemático de sustancias y situaciones asociadas a infracción de ley. Cuenta con competencias en contención y manejo de crisis, regulación emocional y fortalecimiento de recursos personales, con una práctica cercana, empática y centrada en la persona.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56951924672?text=Hola%20Yamila%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:psicologafranciscamunozleiva@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
