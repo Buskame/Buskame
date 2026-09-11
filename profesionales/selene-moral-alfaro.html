@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selene Moral Alfaro · Psicóloga | Búskame</title>
+  <meta name="description" content="Ficha profesional de Selene Moral Alfaro, Psicóloga. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/selene-moral-alfaro.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="selene moral alfaro" data-especialidad="psicóloga" data-region="metropolitana providencia">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCADIAMgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0bPNP7VHTge1cYyVOBSYPmdcUR8nFOVcyY7YqgFlZYImeRwqqMkmvAPi18Q5NTnk0zSptlgp2yOnWU+gPp/Oun+O/ij7DpkWlWsmJ7g/OA2DsHXn07V4NaoJC0srfKDjdjv6CjY0pxvqJb20szHAKD261r21kiKqrCrSHvK+SPoAcfnS2nIwoIz/CD/PvWgWVEB3BiB0XkA+maTdzexF5Rj4Plvx0UA5/wqpcNEzKoiQOP7uadd3DgnDhnPBIzjPp+FRwQM8LSYyOnvxQh8pKtyFhYCIOwP3s4I+lR2l0wlLYfJ6qfT1pyadK/IVto6kCrdrpMiyCQqQhxz3NUmrE8rZZWE3LOm3C5z14X6VXEXks0bvIirkZDAfzrotOsWVS38R+UA9QKzdcswiliWTsBtzn3peSG4dWdJ4K8US6LcxxC9aaAnGJT8yj+WK9s0zW47uNHVw6sMgivkeaa4gbI3kjnJHFdb4G8bTabMsFw5aBm5/2feq1WrOdxT2PqeGUOoNSlufauU8M60l7GpRgysAQQcg+4rpQTgHPFaLUwaJgwNHFMBGOKM4pi1H496UD3qLdQXwKNQ1Js8YzSdKh30u/AoDUk4oqLfRQUYoNOHNR09DXMWTIcHmqurXyafZT3MpAVELfpU27Ga8w+OWtNaaCtnExEl0dnB5C9T+lNDSueJ+ItUuNe127vrktmVvlB58tOwFRRoCoX7qp2qsqlVVQ2Xbt2UVPHLGSsa5Kjk46saTdzpirFtZSinYMgcH/AOv/AIVbj8xrYs5JdjgdsfT0qtBEJZQigYUZc9voPb+ddHp9kJCjEExrwAR17k1EpWN4U+Y5poyJNqDLDC59z1ruPDeiCcxq4+RRjj+dYEESyagxwNvmMfy4r1bwjYZhVyvBx261lVm1odNGmt2XLHw3BLGo8kAVoN4TtWKkoMDHSujtrVljyR24FW1ibFYXkb2ici3hmDflVAU9QBVfV/CNtdQsBnJHau58n1qGWIUJyRNonzt4r8Kz2DE+WQnqa4KeN4Zs7iGB4Oa+q9Z09LuAo6g/WvBfiP4cfS5zcQg+Q554+6fSuyhW5vdkcOJoJe9E3PhN4okhvEtLuX5cjbuPA7cV9D2solhVh6V8ZaTceRcRTx5DxsC4z1X1/CvqnwBqf9p6FE7MDNH8kmPbv+WD+NdS0Z581pc6vOPxpc+9RKe9GeadzJskLUm6mZpMigWo/dg8UFjUZJpM07DsSh/Wio6KBmYKfimhT1qRV45NcxrYa5wpPpXzn8bNQM/iWOLdxDFnGehY/wD1q+ibhf3b89FzzXyP4+v/AD/FmpzMQzecUX8OP6U4q41pqZTSbBgH5jyxqxC+MBcBucc9D6/zrLtyTKpfnkHHrzV+w+eUM3Qd/U1Uo2RtB3Z0mi27PgKv3uB9K7CSB7W3VDwSpOBx+P6VS8KWRe4iG3nGT27/AP1q6S6tZL+OedAVjcFU9oxwP++sZ+mK4py1PTpRsji9GQvqix9RuORjr0r3bwzbYVFHRVx+NeKeHIjJ4gRM/wAbY9eK970GPZCuPxrOb5pmkFaBvwIAMHFSOozxwKiSQKBnFP3hquTMxCoz7VX5OScYqwzYqCUjB61mykUbgZyK5LxhpKanpc8TKDuXg4zg11s4yRzVG6jyD3B4xSTs7ocldHycySabq9xazcFSVYeq969t+BmqbxcWrSDzgq4X1wOT9e30ArgfjLpg0/xFZXcSY+0ZUgDqQR/jWx8OhJonjOwglQKXiXAz9VY+/Q16kZc0FI8erDlk4n0ch3ICO9FIoxgjoaeRg1aZxPRjKQrzmnEUlUWIelN3DHFPppUdqYCBs8UUbKKAK2KKKK4zYr3rCO1mcnjaeK+KdauBdaze3BziSZ2A9AWNfampFfsUwcZG018d+KoooNevIraEJGshAOcluc5/WtKTV7D5Xa5kIVBHzYBP51veHLSW6vEwpIzkDFYUEbyShRnk84Fe5/Dvw9HDarNInmSONwHTP+AorTUUb4eHPIn0uyZUNvH/AKyVVjZs4IUgEn8cn9a7x7GO10vai4AXHr2xWdpVsP7SvJCMkSFAQOMgKOB6dq0td1COy0qRXy0rKQqKCSx/CvObuz1VpoeT+EkH/CVMCcld5P5gV7xpC7bdM+nSvnvRvtr+I5TYsiTEZyegBr0abXPE3h+1El1ZwTxEgB1c4H14q1Hmle4OVopHqaIG46GpPLPc8V5TY/FS7WQx3eikEcllfGPoMdPf9K7LRfFsGqhSqlNwyAe3NVNJEK72OheMlCV61GeV68inLOGQfnVG5uhETyBz3NZuyKSbHXAGRkZbtiqcw4J7DrXKeJ/HceksYrS3a7uDwNp4B9DXEnUvGGvXOZUe2tWIOFIAA+tXGndXZE52di/8Y9PN1p+nXEK7zDeR5x6Nlf6io/H9nHovijwtdLkPueNh0+XcrBgP+2hq/qWg3SWSGO7kdjgtk7gCOQw9wQKofFGZ72z8MThQsy+cWJPTaqnt7KOK66DXJZHnYhP2l2e42hElrEw5yoqdhxWX4bmFxoVlKP44lb8xWqOlbo8+RGaSnHrSU0JOw2lpTSUyriUUtFAylRWLB4l0ec7YtRtmJ7eYK04p0lQGJlceoINclmbaDNRUPaSoe6kV4Tr3g1L83SRAC5U5jY/xenNe8SjcMk1ytzp6/bJTnCgEn6deKzldNNHoYGUWpU5dT5tstLng1iO3uoHjKyhSWPI/Cvojw5DHFp6Y+4BnPsOlc1d6OLu/F3KgKrIADjk4/pXTK4g0eQIAMIQOfXgfqRUVqnPY2hS9k2kXPD0ZfT4pGBDT75DkcjcxI/TFR6vbJBbXMrZaVkI3nnjHb0rV06LyoYlBxtwgA/Kq3iS0aXTpyME7SOV9vauZ6o6VoeG6bry6Pqsky2r3M0oVUjQdSCTW8nxcvJoH8vR2lt48hyiYCD8c1S8I6eLrUrp2H7yEAo3cckcU64+GMxkc2V/dW8TksYtm4ZOe4I7evrXTT9m9JbmFXn0aLzeJBcwR3NzpjxQTDdHJKpVSM9mGVBz64roNC1S0NwgiYq5O0oRgqfQioLfSry28P2mlpCiQwoF3TDJbk5yPrnir+neH4Y7benM0bAowXbt5ztHt/Ksp8t7RNoJ8t2eiaY7SooGeR2Fcz46uriwgaRFc4IGByc10GiS8qM44rP8AHEHnwSxknawGTUtaFLex4JrniC8s54pkijUSFik0illyOuAOv8qt6BrPiHX7q5hh1nyYLaPzRIlthck4wRkY7/lXf23hSwaTcYAImOWXhhn15rWtfCmnWuPs7FVJztUBVJ9SAOfxrdVYJbHPOlNvc5LwRfa+9zNb60BNGcGKSP8Aix1NaPxZEa6D4bkQEEXckbDH3d0YyB9cV2kdikRwi9vTrXDfFwhPDCI4z5d7FKmDgg4YHHvinRnefqY4in7qfY9V8MKItAsYlxhI1Xj0AxWvuyKxtAYDSrYdtgrRDV3rY8Z6snJpN1R7qTcKq4XJC4oDDFREikB460ML9ibd70VBn3ooDU+JRc7TleD7Gt7w74r1fSp1ezvJVVf4GbKn8K5WpoX2DFdLSe6MNVsfTfgLx5beI4xb3WIb9RyueH+lbeoXUUepxpKVVXQxhj2PUV8u6ZezW08c9vIySxsCrA16ndeL2vdCg1AgG5t3TzUz97BGfzGa4sRSUVod2ErNTTZ6E6bLfyJUwwLbfcdapyYeGOM4IaVAQfQHP9K0rUx3mmxywndxmM+oPI/Q1mzki4hVhghyfpgGvMm3fU912vc6OM/uBjoMGrOogtZugOdw9KoWsm6LAxyK0Ix5kILHORms4lo8h+HaGTXdRgIUkZAyPRyDXqcdoUQYhJ/4GcV514FgEPxFu7cklS8pH55/rXs5tl2Y6frTcbu43JJI5uWzMoBZFU/TNKtltQqvHvW3OY7aMsSDgVjxagbuRjFjyugwOaaSHdtaE+mII7gZ6ntVjXYBPw2CCKp2LO11g1tXseUQ4PSrtdGb0kc3aQiM7eAemKvpBGxGUTj1FZXiNpLWJp7cEyxgvs9cckflUui6vHqFukmQNwzWWxry3VzSkVR0A3e1eb/FyNX8P/NwPtEeWHbmvSZGUKWzkY4rzb4sESeHGRQSzzRgAeua1pfGjnrL3GekaAx/sq1z/wA8x/KtMHNZmiLs0y0X0iUfpWjXqReh863qPJwKTNJn1pR7VYmJnJ5NFLtOaDnGKQ0hKKTNFAz4fxhTmlTbnJpzYx71Ga6dkYFyJ1GAK2rSVhaFT/F1FYcKYwzce1bNqm9VxyDXNXlob0E+a57d8N9TVvCelLcgrIDJBz/EI8fN9PmUfX6VaubyKfUz5bhtjlWx2yprxHUNTubvw7plpa3L295p0k4XEmzekjBuD6gg8HsRWh4Q8SfYb6w02WQScSPcXG8tvlYjHPcKFA/E158qN05JnsxrWsmj3WwmAiAPVTzWnaXA+xqo7DBH41zFjPuQkHr1q7a3JQuueM5/OuO9jthqcvobrB8W5MHClmJ/FcivV7q/Cx5U8D1rxsyCH4nGQYAb5s+xSu21K/LoEjPJ6VUpW0NIwUtR2p3cupXBtomPldZMd/aktZxpjOkoPlE5D/0qfR7cbAT1PJPc1rPbI6HcARRTYTa2KMGsWhdJIJEJ7/StmTWomhBOOPeuevtHR1OxF9RjjFUzozbfnLEDrlziq9o0rEqKepLqGpfbboiAZQZy1YtsjaVeBVz5Dcrjse4rchtliiITGO1ZOrSgptH3gc4rHndzWNka76jug4PGO5rifHUpvLTT7cEnz7+JMD2yavzTSBThSCB1xWRbvHqfibQLaNw7QXUskqjsVUD/ANm/SuihrI5cW1GGh7LZR7LaJT2UVaqKHpj2qUda9JaHzT3HAA96UDBoHtSirTGFFOAzSEU7hcbgGinUUBc+HTyadlVGcc0BueeaRRuJPSt2YrVksBy3zEk1s2smIATwScAVnWluJDuDjHf2q55iRhUH3sZweuK4q0r6Hfh4a3Yk0avOUIHzNj2zWbDAUuN44KsVP+fpVxpN0ynI5/GpJxtllHdsNwPXp/WsotxR6Limel/DnxAL/T1t53zcwfI+TyR2b/Peu5wfmKnkgGvnCw1KXRddFzASEzh19R3Fe/aDqcWpWEFxE25WTrXNiaXK+ZbM1w9S94vdGBLG7ePwpJ3/AGfevHtzW9OtzG+UjaZ842ggYA+tUrbDfEy1Pb7ASfzYV3sMEfnnI4YfrXLU1a9Dui7I4ZfGU9rdpaPpc8MrMFRpSNjH0yD/ADrXj8S6iUdpbKdUU7WKQkgH681p6rpiXGWCKSOBxwRVLT1aBjEu2I7gcHGCRXXBRa0RpCCkm1ZkMviK5hfa63yP1MbWzDj6EVDPr9/efLawXzY4Kw2rDP1OK65dYvo5Vka1hlURFN3mFTnOR2PHWqv9t3kDSH7PbIjnOCzEg05LyCLqvaCOCvdR1OK4igaO4iaXkbmHA9SATiui0jSpDIBdSNJn5iT6VTwst7HEnJBDO3XH410KTCJCc4+XrXLWetiqt46Pcx/EZisreSQ8Iiljj0Fed/DW/wBnitL6dRtclWPpuNaPxM1sCNbWN+ZvvAH+EdfzPH51xWl3BglCwsPMYZxnGfb61rSvFXPNr+8nFn1RCyuoKHIIyKmUc1w/w88Qx6lp/kmTM8WFZT1FdsrD1r0ou6ueDOHKyUDFLTN3vRu96Zne47NPDcVEWpPNCjqKaCxKTRWfeXyW8ZdskD0op2Y0kfFqDew4P4CraKkeSSQw6ADkVUsnd0fa5DhScDr2qpPPKrlM4APT1rRu+g4x5TS+0rGXaEDfg8+lV7eUmVix5ZcZz61U3BWcrnaemaITnIHU8VnyG0Zu5tW0e65aNzlkzwO4q7qK5SLa28rx9VP9QaitCGv0lRs8hSfyqxfKFLFMDZIQB9a5ZO0j1oK8TA1BgZc5OeQ1d38LdVkgiMLsTGG6exrhL5SJm64zmuq+H8RSct1QnmqrP90RTT9rdHplq2PHFvck/I9iwRscEh+f5131rLltx79D6V5fqkr2V5phjOXM3yr7Yw34YNdLpmstG6+YPkHHXpXnTWzO+Mlax3DjKHAGKpTwROCssYde4PSpba7WVVKtlTViSPf0xzUqT6DjoYU1tDysZkRfZulUWtUDH5pX9mbiunFkrE7uD60j2cSDA5HrTcp9zeNWS6nP29uIz8q7fWsXxlrsOj2JeZ9qgYPr9B711V7LHbws/H418yePNdfXNfuJEkLWiOUhGeMD+L8avDUHWlrscOLxHslfqxX1SbV9YnvLgkRemchV7Cqxv9rks2cH5TnkVTdja6eIv4peT7CqBbjivVVJM8uWIaST3O08N+KLvQdSW7gUmVuG+b5WHoa9Ob40xRxKsdgZJSAWzJjFeBREkFj24FWI/uk1rGmkcs5czPp7wn8UNJ1jEd232K4/uyH5T9DXeQ3McyBonDqeQQa+K4iy85rpdB8Za1o6BLS9k8vptf5gKp0k9jLY+sGfHWqlxPgV43ovxckjjSPVbYv6yx/4V3eneI7LWrXzbGdW9VzyPrUcjW4m0XdUvCsZOQfY0VPolvFdzuZgH29AaKq4K7PjqOZ4pFeNsMO9XmEd+wMYWKc9UJwrH2PY+x4rOJOBSxkjceMgd6GjVMsSQSQkq6kFT3H6VHFlJORxV+01COcCDUssmMLN/FH9fVfb8qZfWclq7dCMBlI5DKe49qm/RlqN9USWM/lwkN98SZOT1A/z+tXGm3ySrkHeNyk9yP8A61YyZ2bhya0bMrICkhwex9DWU4pO524ao2uUjnYSS9COnWuo+H9wsGqiCU/JJ8ozXM7S0rZGW7471cs2a2uIZVPGcgjt7VlVXNHlOqmrSuz1uGH7Z4mnZiWgsIhCp7eY/wAxH1AwPxq3NbsjEqOKj+HE8EmjeTLgyzu00vu7H/DA/CugurF4zmP54/TuP8a8+clt2NmmjO0nVWtXEUpPl9ie1dZbaikqDa4/OuPnhBye/pVUmRDiMlfXmoVi4ytuehPqUYHzPgjuKqXGsJjCkBcfePSuKRrl8KrNuPTvV+KydYt14xYj7qt0H4USkjTmRlfEDXjbaBeurYBjKI3TezcZHtXgVsgaX5/uL8zH2r0f4sXxlght8naHz9TXmm9gm0HAPWvTwUbU79zxcdO9S3YfdTNPMzsTmo8cCk704/eHSu04W7kgOECgc9asocgAfjVVecsDyKesm1Scct2pgWx8zYBwB1PpU0Y/KoU+WMDueT9al3gDLdqpMllhCFxnn2qe21Sezl3Wkskbnuhxms4sW+np608Hb3x9Kq5DR7H8LPFd0tnfzXbNLJAQVB6sDRXlWl6jLY3CyQTMpzyOxFFHJF7kttbHMVLCgMMjHPBUZ9M55/lUWOKVWKhh2YYNZG4rD1rT0u4Lg2lw3yMrKhP8JPp9TWUPQ9Kch2n1pNXRUJcruW41aJwo+8Gxg9P89qtRlY7jYxGDgox9O2aZdHe8crfdlXccDv0P6jNF4oktlf8AjT5T6YrKWujOqn7rbRp7UZxv+RugPb6GpEBSTZKPkc4z6Gsm2uC9uUYbsDHuKuWN55qtDP1A4zWEoNI9CFSMreZ2ngm8MN0YXLKx4Bz3r1+wkMkKkgEY5x1/KvEdBVvtkfXIxgjue3417LoUmYEX1GeleVWdpnXbmiW7m2SQ/PGD74qBNLgJy24+1aLQ7mUZOOtTRQgHkdKiLuQ4laCzihQ7EA98Vj605f8AdRZDYzXSyqBEcDtXN3MRaZger9fYUT3shxXc8U+KBH2m2HpkD36ZP9PwrhDXoPxgjEWqWirgAozYH1A/pXn1e9hlakjw8X/FYClUYNApV756Vucwo+43qadwGUdhUfQClb71AFoPz60CQuck4UVXLdBTlI7nj0piZbWTONowKd9arI/pT8n1p3JJwcHiiomDA4bg0U72BIoUUUVBY6NC7YXGcE8n0Gab1x60A46UUAasP73TCMndE24fQ8H9cU+3XzYHTHOCcVWsJiqEcEHKEH0P/wBersA8qfjkYyBWE9D0aPvJMp2MTGcKCBuwBnpU4Uw3I3DBFT6bGV1BUAztcj+orQ163Rv38WN3BOKic7TS7mtKn7nobOgyhZih+bG0qwPvn+Rr1bRLjyRFE3K9iT1/+v8Azrxjw/OFngLDgYQ+4JxXsGhxs1tCzqfLdeCfXoR/n2rycVFqVz0qUk1Y7GNlKqwOal8wZwO3WseOZ4vlJyhGOO3vUwmU7Tn3GazixtFy6mwmcVS8kFS5GWbp7Cnqy3DjZgxjk+9SE4bmtErsho8D+NWR4htEPQW+f/HjXnlet/tC6d9h1jRHZQHnsjIfX/WHGfwIryTGa9yiuWCR8/iJc1RtCjOfakHU0A4pO9aGIufloJyaTtRQAd6VetJQpwaAJgcCpASahBGOKcG560ybE4OeuBRUYIz939aKYFaiiipKCiiigCxa8llHUjitckSxxSnuDkelFFY1Tvwj6DEk+z6nFK2NrYatbV9qu5Q/JJHnHuKKK557xOyn9pFLS9322JA23BHb0r6e0nR2uvC2bZN1wmJUA/iwoBH4gZ/KiiiUVNNPsZ1KkoOLXcz7QhwTjnrWjp2j3Ot3P2bTkXz8B2c42qM9WByD9MHNFFeTHQ7cRNxg2ibUdGu9BlS2vUUFslZE+6/rxgYPPSjSrE6pqUFoB8hO6Qjsg6/4fjRRW+G9+Suc7qSdDm6nmn7WEZ/tnQJOBH9nkjC+hDKf5EV4ERRRXvWPDYnakxxntRRSAPWiiigAooooAU4HSnDiiigQ8MCPSiiigD//2Q==" style="width:84px;height:84px;border-radius:16px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Selene Moral Alfaro</div>
+          <div class="prof-esp">Psicóloga</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Providencia, RM</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🧩 Psicología clínica</span></div>
+      <p class="prof-desc">Psicóloga clínica que entiende la terapia como un espacio de encuentro, confianza y respeto. Trabaja principalmente con mujeres jóvenes y adultas, acompañando procesos de ansiedad, depresión, estrés, dificultades relacionales, duelos y cambios vitales, incluida la maternidad, desde un enfoque integrativo y terapias de tercera generación, con perspectiva de género.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56962204405?text=Hola%20Selene%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:ps.selene.moral@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          <a href="https://instagram.com/ps.selene.moral" target="_blank" class="btn-contactar" style="text-align:center;background:#c13584">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
