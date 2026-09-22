@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniela Andrea Candia Escalona · Enfermera | Búskame</title>
+  <meta name="description" content="Ficha profesional de Daniela Andrea Candia Escalona, Enfermera. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/daniela-andrea-candia-escalona.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="daniela andrea candia escalona" data-especialidad="enfermera" data-region="metropolitana lampa">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:84px;height:84px;border-radius:16px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Daniela Andrea Candia Escalona</div>
+          <div class="prof-esp">Enfermera</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Lampa, RM</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🧩 Curaciones avanzadas y ostomías</span></div>
+      <p class="prof-desc">Enfermera con atención especializada, personalizada y con enfoque integral para el cuidado de heridas y ostomías. Realiza evaluación y manejo de heridas y curaciones avanzadas, atención y cuidado de pacientes ostomizados, educación para el autocuidado, manejo y cambio de dispositivos, y orientación a pacientes y familiares, acompañando el proceso con herramientas y educación basadas en las necesidades de cada persona.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56945208507?text=Hola%20Daniela%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:dcandia.e@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
