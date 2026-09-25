@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laura Abigail Cheriff Rivera · Psicóloga | Búskame</title>
+  <meta name="description" content="Ficha profesional de Laura Abigail Cheriff Rivera, Psicóloga. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/laura-abigail-cheriff-rivera.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="laura abigail cheriff rivera" data-especialidad="psicóloga" data-region="metropolitana providencia">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:84px;height:84px;border-radius:16px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Laura Abigail Cheriff Rivera</div>
+          <div class="prof-esp">Psicóloga</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificada · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Providencia, RM</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🧩 Psicología clínica</span></div>
+      <p class="prof-desc">Psicóloga clínica de adultos, titulada y diplomada en Psicología Clínica por la Universidad de Santiago de Chile, con más de 6 años de experiencia en el trabajo clínico. Su orientación es psicoanalítica e integrativa, trabajando principalmente con ansiedad, depresión, autoestima, trauma, crisis vitales y dificultades vinculares, entre otras temáticas.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56962499906?text=Hola%20Laura%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:laura.cheriff@usach.cl?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          <a href="https://instagram.com/quieropsicoterapia" target="_blank" class="btn-contactar" style="text-align:center;background:#c13584">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
