@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Nathan Guiloff Barrientos · Psicólogo | Búskame</title>
+  <meta name="description" content="Ficha profesional de Gabriel Nathan Guiloff Barrientos, Psicólogo. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/gabriel-nathan-guiloff-barrientos.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="gabriel nathan guiloff barrientos" data-especialidad="psicólogo" data-region="metropolitana las condes">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:84px;height:84px;border-radius:16px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Gabriel Nathan Guiloff Barrientos</div>
+          <div class="prof-esp">Psicólogo</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificado · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 Las Condes, RM</span><span class="badge badge-gris">💻 Atiende online</span><span class="badge badge-gris">🧩 Psicología clínica</span></div>
+      <p class="prof-desc">Psicólogo titulado de la Universidad del Desarrollo que realiza psicoterapia individual exclusivamente online, ofreciendo un espacio de escucha, comprensión y acompañamiento basado en la confianza, la empatía y el respeto. Cuenta con un diplomado en Trastornos de la Personalidad de la Pontificia Universidad Católica de Chile y trabaja principalmente ansiedad, autoestima, trastorno obsesivo-compulsivo (TOC) y trastornos de la personalidad.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56971319273?text=Hola%20Gabriel%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:psicogabrielguiloff@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          <a href="https://instagram.com/ps.gabrielguiloff" target="_blank" class="btn-contactar" style="text-align:center;background:#c13584">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
