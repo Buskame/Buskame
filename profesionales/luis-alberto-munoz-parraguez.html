@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Alberto Muñoz Parraguez · Psicólogo | Búskame</title>
+  <meta name="description" content="Ficha profesional de Luis Alberto Muñoz Parraguez, Psicólogo. Encuéntralo/a en Búskame, directorio gratuito de profesionales de salud no médicos en Chile.">
+  <link rel="canonical" href="https://buskame.cl/profesionales/luis-alberto-munoz-parraguez.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+  :root {
+    --verde: #1a8c75;
+    --verde-claro: #22a98d;
+    --verde-oscuro: #0f5c4e;
+    --blanco: #f8faf9;
+    --gris: #6b7280;
+    --texto: #1a2e29;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--blanco); color: var(--texto); overflow-x: hidden; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(248,250,249,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26,140,117,0.1);
+    padding: 0 2rem; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 36px; height: 36px; background: var(--verde); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 20px; height: 20px; fill: white; }
+  .logo-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--texto); }
+  .logo-sub { font-size: 11px; color: var(--gris); display: block; margin-top: -4px; font-weight: 300; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--verde); }
+  .btn-nav { background: var(--verde); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s; }
+  .btn-nav:hover { background: var(--verde-oscuro); }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-illustration {
+    position: relative; overflow: hidden;
+    background: #f0f8f5;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-illustration svg { width: 85%; height: auto; position: relative; z-index: 1; }
+
+  .hero-content {
+    background: var(--verde); padding: 4rem 3rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .hero-content::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.05);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.15); color: white;
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    margin-bottom: 1.5rem; width: fit-content; backdrop-filter: blur(8px);
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #7eebb8; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .hero-content h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.6rem; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 1rem; }
+  .hero-content p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; font-weight: 300; }
+
+  .search-box {
+    background: white; border-radius: 14px; padding: 6px;
+    display: flex; gap: 6px; margin-bottom: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  .search-box input { flex: 1; border: none; outline: none; padding: 10px 14px; font-size: 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--texto); background: transparent; }
+  .search-box input::placeholder { color: #aaa; }
+  .search-divider { width: 1px; background: #e5e7eb; margin: 8px 0; }
+  .search-box select { border: none; outline: none; padding: 10px 10px; font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif; color: var(--gris); background: transparent; cursor: pointer; }
+  .search-btn { background: var(--verde-oscuro); color: white; border: none; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+  .search-btn:hover { background: #073d33; }
+
+  .especialidades { display: flex; gap: 10px; flex-wrap: wrap; }
+  .esp-chip {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.12); color: white;
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 500;
+    cursor: pointer; transition: background 0.2s;
+    border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+  }
+  .esp-chip:hover { background: rgba(255,255,255,0.22); }
+
+  .stats { background: white; padding: 2rem 4rem; display: flex; gap: 3rem; align-items: center; border-bottom: 1px solid #e5e7eb; justify-content: center; }
+  .stat { text-align: center; }
+  .stat-n { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 700; color: var(--verde); }
+  .stat-l { font-size: 12px; color: var(--gris); margin-top: 2px; }
+  .stat-divider { width: 1px; height: 40px; background: #e5e7eb; }
+
+  .beneficios { padding: 4rem 4rem; background: var(--blanco); }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 600; color: var(--texto); margin-bottom: 0.5rem; }
+  .section-sub { color: var(--gris); font-size: 14px; margin-bottom: 2.5rem; }
+  .beneficios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .beneficio-card { background: white; border-radius: 16px; padding: 1.5rem; border: 1px solid #e5e7eb; transition: border-color 0.2s, transform 0.2s; }
+  .beneficio-card:hover { border-color: var(--verde-claro); transform: translateY(-2px); }
+  .beneficio-icon { width: 48px; height: 48px; background: #e8f7f3; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 1rem; }
+  .beneficio-card h3 { font-size: 14px; font-weight: 600; color: var(--texto); margin-bottom: 6px; }
+  .beneficio-card p { font-size: 13px; color: var(--gris); line-height: 1.5; }
+
+  /* SECCIÓN PROFESIONALES */
+  .profesionales { padding: 4rem; background: white; }
+  .prof-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .prof-card {
+    background: var(--blanco); border-radius: 16px; padding: 1.5rem;
+    border: 1px solid #e5e7eb; transition: all 0.25s;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .prof-card:hover { border-color: var(--verde-claro); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,140,117,0.1); }
+  .prof-avatar {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde), var(--verde-oscuro));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 700; color: white;
+  }
+  .prof-header { display: flex; gap: 1rem; align-items: center; }
+  .prof-info { flex: 1; }
+  .prof-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; font-weight: 600; color: var(--texto); margin-bottom: 2px; }
+  .prof-esp { font-size: 13px; color: var(--verde); font-weight: 500; }
+  .prof-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 500;
+  }
+  .badge-verde { background: #e8f7f3; color: var(--verde-oscuro); }
+  .badge-gris { background: #f3f4f6; color: var(--gris); }
+  .badge-online { background: #e8f7f3; color: var(--verde-oscuro); }
+  .prof-desc { font-size: 13px; color: var(--gris); line-height: 1.6; }
+  .prof-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid #e5e7eb; }
+  .prof-contacto { font-size: 12px; color: var(--gris); display: flex; align-items: center; gap: 4px; }
+  .btn-contactar {
+    background: var(--verde); color: white; border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif; transition: background 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-contactar:hover { background: var(--verde-oscuro); }
+  .prof-verificado { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: var(--verde); font-weight: 500; }
+
+  .cta-prof { margin: 0 4rem 4rem; background: var(--verde-oscuro); border-radius: 20px; padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .cta-prof h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 0.5rem; }
+  .cta-prof p { color: rgba(255,255,255,0.7); font-size: 14px; max-width: 400px; }
+  .btn-cta { background: white; color: var(--verde-oscuro); border: none; border-radius: 12px; padding: 14px 28px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; white-space: nowrap; transition: transform 0.2s; }
+  .btn-cta:hover { transform: scale(1.03); }
+
+  footer { background: var(--texto); color: rgba(255,255,255,0.6); text-align: center; padding: 1.5rem; font-size: 13px; }
+  footer span { color: var(--verde-claro); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease forwards; opacity: 0; }
+  .hero-badge { animation-delay: 0.1s; }
+  .hero-content h1 { animation-delay: 0.2s; }
+  .hero-content p { animation-delay: 0.3s; }
+  .search-box { animation-delay: 0.4s; }
+  .especialidades { animation-delay: 0.5s; }
+
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 4s ease-in-out infinite; }
+  .float-delay { animation: float 4s ease-in-out infinite 1s; }
+  .float-delay2 { animation: float 4s ease-in-out infinite 2s; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-illustration { height: 280px; }
+    .hero-content { padding: 2.5rem 1.5rem; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+    .beneficios-grid { grid-template-columns: 1fr 1fr; }
+    .cta-prof { flex-direction: column; margin: 0 1.5rem 2rem; padding: 2rem; }
+    .stats { padding: 1.5rem; gap: 1.5rem; }
+    .beneficios { padding: 2.5rem 1.5rem; }
+    .profesionales { padding: 2.5rem 1.5rem; }
+    .prof-grid { grid-template-columns: 1fr; }
+  }
+
+  body { padding: 2rem 1rem; }
+  .back-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--verde-oscuro); font-weight:600; text-decoration:none; margin-bottom:1.5rem; font-size:0.95rem; }
+  .back-link:hover { text-decoration:underline; }
+  .page-card { max-width:480px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <a href="https://buskame.cl/" class="back-link">← Volver al directorio</a>
+    <div class="prof-card" data-nombre="luis alberto muñoz parraguez" data-especialidad="psicólogo" data-region="metropolitana san miguel">
+      <div class="prof-header">
+        <img src="data:image/jpeg;base64,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" style="width:84px;height:84px;border-radius:16px;object-fit:cover;flex-shrink:0">
+        <div class="prof-info">
+          <div class="prof-name">Luis Alberto Muñoz Parraguez</div>
+          <div class="prof-esp">Psicólogo</div>
+          <div class="prof-verificado">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Verificado · Reg. SIS
+          </div>
+        </div>
+      </div>
+      <div class="prof-badges"><span class="badge badge-gris">📍 San Miguel, RM</span><span class="badge badge-gris">🏥 Presencial y online</span><span class="badge badge-gris">🧩 Psicología clínica y jurídica</span></div>
+      <p class="prof-desc">Psicólogo clínico y jurídico, con experiencia en atención primaria de salud, intervención psicosocial y jefatura técnica de equipos. Su trayectoria incluye atención psicológica, evaluación, trabajo con familias y coordinación con redes de salud, educación y justicia. Cuenta con diplomados en Psicopatología Infanto-Juvenil de la Universidad de Chile y en Psicología Jurídica–Evaluación Forense de la Pontificia Universidad Católica de Chile.</p>
+      <div class="prof-footer" style="flex-direction:column;gap:0.5rem;align-items:stretch">
+        <span class="prof-contacto">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Responde en menos de 24h
+        </span>
+        <div style="display:flex;flex-direction:column;gap:0.5rem">
+          <div style="display:flex;gap:0.5rem"><a href="https://wa.me/56978383675?text=Hola%20Luis%2C%20te%20contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center">💬 WhatsApp</a><a href="mailto:ps.luismp@gmail.com?subject=Contacto%20desde%20B%C3%BAskame" target="_blank" class="btn-contactar" style="flex:1;text-align:center;background:#0f5c4e">✉️ Correo</a></div>
+          <a href="https://instagram.com/en.contextos" target="_blank" class="btn-contactar" style="text-align:center;background:#c13584">📷 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
